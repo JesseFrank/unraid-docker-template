@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <Container>
-  <Name>FileBrowser</Name>
+  <Name>tinymediamanager</Name>
   <Repository>dzhuang/tinymediamanager</Repository>
   <Registry>https://hub.docker.com/r/dzhuang/tinymediamanager</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support>没有support</Support>
   <Project>https://hub.docker.com/r/dzhuang/tinymediamanager</Project>
-  <Overview>filebrowser</Overview>
+  <Overview>tinymediamanager</Overview>
   <Description>
     带中文字体的tinymediamanager
   </Description>
