@@ -1,7 +1,9 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>tinymediamanager</Name>
-  <Repository>https://hub.docker.com/r/romancin/tinymediamanager</Repository>
+  <Date>2020-03-29</Date>
+  <Beta>False</Beta>
+  <Name>TinyMediaManager</Name>
+  <Repository>romancin/tinymediamanager</Repository>
   <Registry>https://hub.docker.com/r/romancin/tinymediamanager</Registry>
   <Network>bridge</Network>
   <MyIP/>
