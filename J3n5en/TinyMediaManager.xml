@@ -3,19 +3,19 @@
   <Date>2020-03-29</Date>
   <Beta>False</Beta>
   <Name>TinyMediaManager</Name>
-  <Repository>romancin/tinymediamanager</Repository>
-  <Registry>https://hub.docker.com/r/romancin/tinymediamanager</Registry>
+  <Repository>dzhuang/tinymediamanager</Repository>
+  <Registry>https://hub.docker.com/r/dzhuang/tinymediamanager</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support/>
-  <Project>https://hub.docker.com/r/romancin/tinymediamanager</Project>
+  <Project>https://hub.docker.com/r/dzhuang/tinymediamanager</Project>
   <Overview>&#x5E26;&#x4E2D;&#x6587;&#x5B57;&#x4F53;&#x7684;TinyMediaManager</Overview>
   <Category>MediaApp:Video MediaServer:Video Network:Web Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
   <TemplateURL/>
-  <Icon>https://i.loli.net/2020/03/29/EV8PjtKpw7xzyhO.png</Icon>
+  <Icon>https://docker.sgu.party/J3n5en/images/TinyMediaManager.png</Icon>
   <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
   <PostArgs/>
   <CPUset/>
