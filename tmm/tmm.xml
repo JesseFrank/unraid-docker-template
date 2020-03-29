@@ -3,7 +3,7 @@
   <Name>FileBrowser</Name>
   <Repository>dzhuang/tinymediamanager</Repository>
   <Registry>https://hub.docker.com/r/dzhuang/tinymediamanager</Registry>
-  <Network>host</Network>
+  <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support>没有support</Support>
   <Project>https://hub.docker.com/r/dzhuang/tinymediamanager</Project>
@@ -12,7 +12,7 @@
     带中文字体的tinymediamanager
   </Description>
   <Category>Cloud: Network:Web Status:Stable</Category>
-  <WebUI>http://[IP]:[PORT:8083]</WebUI>
+  <WebUI>http://[IP]:[PORT:5800]</WebUI>
   <Icon>https://github.com/J3n5en/unraid-docker-template/raw/master/tmm/tmm.png</Icon>
   <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
   <PostArgs></PostArgs>
@@ -55,12 +55,14 @@
     <Publish>
       <Port>
         <HostPort>5800</HostPort>
+        <Description>Port used to access the application's GUI via the web interface.</Description>
         <ContainerPort>5800</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
         <HostPort>5900</HostPort>
         <ContainerPort>5900</ContainerPort>
+        <Description>Port used to access the application's GUI via the VNC protocol. Optional if no VNC client is used.</Description>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
