@@ -13,7 +13,7 @@
   </Description>
   <Category>Cloud: Network:Web Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
-  <Icon>https://github.com/J3n5en/unraid-docker-template/raw/master/tmm/tmm.png</Icon>
+  <Icon>https://github.com/J3n5en/unraid-docker-template/raw/master/tinymediamanager/tinymediamanager.png</Icon>
   <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
   <PostArgs></PostArgs>
   <CPUset/>
