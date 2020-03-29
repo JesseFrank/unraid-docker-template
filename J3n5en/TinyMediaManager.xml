@@ -2,7 +2,7 @@
 <Container version="2">
   <Date>2020-03-29</Date>
   <Beta>False</Beta>
-  <Name>TinyMediaManager</Name>
+  <Name>tmm</Name>
   <Repository>dzhuang/tinymediamanager</Repository>
   <Registry>https://hub.docker.com/r/dzhuang/tinymediamanager</Registry>
   <Network>bridge</Network>
@@ -15,9 +15,9 @@
   <Category>MediaApp:Video MediaServer:Video Network:Web Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
   <TemplateURL/>
-  <Icon>https://docker.sgu.party/J3n5en/images/TinyMediaManager.png</Icon>
+  <Icon>https://raw.githubusercontent.com/J3n5en/unraid-docker-template/master/J3n5en/images/TinyMediaManager.png</Icon>
   <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
-  <PostArgs/>
+  <PostArgs>echo 13.224.161.90 api.themoviedb.org >> /etc/hosts<PostArgs/>
   <CPUset/>
   <DateInstalled>1585461587</DateInstalled>
   <DonateText/>
@@ -45,7 +45,7 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/j3n5en/tmm</HostDir>
+      <HostDir>/mnt/user/appdata/j3n5en/tinymediamanager</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -61,18 +61,12 @@
       <Name>KEEP_APP_RUNNING</Name>
       <Mode/>
     </Variable>
-    <Variable>
-      <Value>1</Value>
-      <Name>ENABLE_CJK_FONT</Name>
-      <Mode/>
-    </Variable>
   </Environment>
   <Labels/>
   <Config Name="Media files" Target="/media" Default="/mnt/user" Mode="rw" Description="This is where your media files are stored." Type="Path" Display="always" Required="true" Mask="false">/mnt/user</Config>
   <Config Name="Config" Target="/config" Default="/mnt/user/appdata/j3n5en/tmm" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency." Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/j3n5en/tmm</Config>
   <Config Name="TimeZone" Target="TZ" Default="Asia/Shanghai" Mode="" Description="TimeZone" Type="Variable" Display="always" Required="true" Mask="false">Asia/Shanghai</Config>
   <Config Name="KEEP_APP_RUNNING" Target="KEEP_APP_RUNNING" Default="1" Mode="" Description="When set to 1, the application will be automatically restarted if it crashes or if user quits it." Type="Variable" Display="advanced" Required="true" Mask="false">1</Config>
-  <Config Name="ENABLE_CJK_FONT" Target="ENABLE_CJK_FONT" Default="1" Mode="" Description="When set to 1, open source computer font WenQuanYi Zen Hei is installed. &amp;lt;br&amp;gt;This font contains a large range of Chinese/Japanese/Korean characters." Type="Variable" Display="advanced" Required="true" Mask="false">1</Config>
   <Config Name="webUI" Target="5800" Default="5800" Mode="tcp" Description="Port used to access the application's GUI via the web interface." Type="Port" Display="always" Required="true" Mask="false">5800</Config>
   <Config Name="VNC" Target="5900" Default="5900" Mode="tcp" Description="Port used to access the application's GUI via the VNC protocol. Optional if no VNC client is used." Type="Port" Display="always" Required="false" Mask="false">5900</Config>
 </Container>
