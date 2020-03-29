@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>TinyMediaManager</Name>
+  <Name>tinymediamanager</Name>
   <Repository>https://hub.docker.com/r/romancin/tinymediamanager</Repository>
   <Registry>https://hub.docker.com/r/romancin/tinymediamanager</Registry>
   <Network>bridge</Network>
