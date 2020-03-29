@@ -1,55 +1,26 @@
 <?xml version="1.0"?>
-<Container>
-  <Name>tmm</Name>
-  <Repository>dzhuang/tinymediamanager</Repository>
-  <Registry>https://hub.docker.com/r/dzhuang/tinymediamanager</Registry>
+<Container version="2">
+  <Name>TinyMediaManager</Name>
+  <Repository>https://hub.docker.com/r/romancin/tinymediamanager</Repository>
+  <Registry>https://hub.docker.com/r/romancin/tinymediamanager</Registry>
   <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support>https://www.j3n5en.com</Support>
-  <Project>https://hub.docker.com/r/dzhuang/tinymediamanager</Project>
-  <Overview>TinyMediaManager</Overview>
-  <Description>
-    带中文字体的 TinyMediaManager
-  </Description>
-  <Category>Cloud: Network:Web Status:Stable</Category>
+  <Support/>
+  <Project>https://hub.docker.com/r/romancin/tinymediamanager</Project>
+  <Overview>&#x5E26;&#x4E2D;&#x6587;&#x5B57;&#x4F53;&#x7684;TinyMediaManager</Overview>
+  <Category>MediaApp:Video MediaServer:Video Network:Web Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
+  <TemplateURL/>
   <Icon>https://i.loli.net/2020/03/29/EV8PjtKpw7xzyhO.png</Icon>
   <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
-  <PostArgs></PostArgs>
+  <PostArgs/>
   <CPUset/>
-  <DateInstalled></DateInstalled>
+  <DateInstalled>1585461587</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description></Description>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/j3n5en/tmm</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user</HostDir>
-      <ContainerDir>/media</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Environment>
-    <Variable>
-      <Value>0</Value>
-      <Name>GROUP_ID</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>0</Value>
-      <Name>USER_ID</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>Asia/Shanghai</Value>
-      <Name>TZ</Name>
-      <Mode/>
-    </Variable>
-  </Environment>
+  <Description>&#x5E26;&#x4E2D;&#x6587;&#x5B57;&#x4F53;&#x7684;TinyMediaManager</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -65,4 +36,41 @@
       </Port>
     </Publish>
   </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/j3n5en/tmm</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>Asia/Shanghai</Value>
+      <Name>TZ</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1</Value>
+      <Name>KEEP_APP_RUNNING</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1</Value>
+      <Name>ENABLE_CJK_FONT</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Media files" Target="/media" Default="/mnt/user" Mode="rw" Description="This is where your media files are stored." Type="Path" Display="always" Required="true" Mask="false">/mnt/user</Config>
+  <Config Name="Config" Target="/config" Default="/mnt/user/appdata/j3n5en/tmm" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency." Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/j3n5en/tmm</Config>
+  <Config Name="TimeZone" Target="TZ" Default="Asia/Shanghai" Mode="" Description="TimeZone" Type="Variable" Display="always" Required="true" Mask="false">Asia/Shanghai</Config>
+  <Config Name="KEEP_APP_RUNNING" Target="KEEP_APP_RUNNING" Default="1" Mode="" Description="When set to 1, the application will be automatically restarted if it crashes or if user quits it." Type="Variable" Display="advanced" Required="true" Mask="false">1</Config>
+  <Config Name="ENABLE_CJK_FONT" Target="ENABLE_CJK_FONT" Default="1" Mode="" Description="When set to 1, open source computer font WenQuanYi Zen Hei is installed. &amp;lt;br&amp;gt;This font contains a large range of Chinese/Japanese/Korean characters." Type="Variable" Display="advanced" Required="true" Mask="false">1</Config>
+  <Config Name="webUI" Target="5800" Default="5800" Mode="tcp" Description="Port used to access the application's GUI via the web interface." Type="Port" Display="always" Required="true" Mask="false">5800</Config>
+  <Config Name="VNC" Target="5900" Default="5900" Mode="tcp" Description="Port used to access the application's GUI via the VNC protocol. Optional if no VNC client is used." Type="Port" Display="always" Required="false" Mask="false">5900</Config>
 </Container>
