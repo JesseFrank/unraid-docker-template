@@ -28,7 +28,8 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>This is where your media files are stored.</HostDir>
+      <Description>This is where your media files are stored.</Description>
+      <HostDir>/mnt/user</HostDir>
       <ContainerDir>/media</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
