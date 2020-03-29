@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <Container>
-  <Name>tinymediamanager</Name>
+  <Name>TinyMediaManager</Name>
   <Repository>dzhuang/tinymediamanager</Repository>
   <Registry>https://hub.docker.com/r/dzhuang/tinymediamanager</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support>没有support</Support>
   <Project>https://hub.docker.com/r/dzhuang/tinymediamanager</Project>
-  <Overview>tinymediamanager</Overview>
+  <Overview>TinyMediaManager</Overview>
   <Description>
-    带中文字体的tinymediamanager
+    带中文字体的 TinyMediaManager
   </Description>
   <Category>Cloud: Network:Web Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
-  <Icon>https://github.com/J3n5en/unraid-docker-template/raw/master/tinymediamanager/tinymediamanager.png</Icon>
+  <Icon>https://github.com/J3n5en/unraid-docker-template/raw/master/TinyMediaManager/TinyMediaManager.png</Icon>
   <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
   <PostArgs></PostArgs>
   <CPUset/>
@@ -28,7 +28,6 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <Description>This is where your media files are stored.</Description>
       <HostDir>/mnt/user</HostDir>
       <ContainerDir>/media</ContainerDir>
       <Mode>rw</Mode>
@@ -56,14 +55,12 @@
     <Publish>
       <Port>
         <HostPort>5800</HostPort>
-        <Description>Port used to access the application's GUI via the web interface.</Description>
         <ContainerPort>5800</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
         <HostPort>5900</HostPort>
         <ContainerPort>5900</ContainerPort>
-        <Description>Port used to access the application's GUI via the VNC protocol. Optional if no VNC client is used.</Description>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
