@@ -13,7 +13,7 @@
   <Category/>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/heimdall-icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/J3n5en/unraid-docker-template/master/J3n5en/images/av.jpg</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
