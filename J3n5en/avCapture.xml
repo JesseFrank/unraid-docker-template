@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>av-capture</Name>
+  <Repository>j3n5en/av-capture</Repository>
+  <Registry>https://hub.docker.com/r/j3n5en/av-capture</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>mailto:admin@j3n5en.com</Support>
+  <Project>https://github.com/yoshiko2/AV_Data_Capture</Project>
+  <Overview>&#x65E5;&#x672C;&#x7535;&#x5F71;&#x5143;&#x6570;&#x636E; &#x6293;&#x53D6;&#x5DE5;&#x5177; | &#x522E;&#x524A;&#x5668;&#xFF0C;&#x914D;&#x5408;&#x672C;&#x5730;&#x5F71;&#x7247;&#x7BA1;&#x7406;&#x8F6F;&#x4EF6; Emby, Jellyfin, Kodi &#x7B49;&#x7BA1;&#x7406;&#x672C;&#x5730;&#x5F71;&#x7247;&#xFF0C;&#x8BE5;&#x8F6F;&#x4EF6;&#x8D77;&#x5230;&#x5206;&#x7C7B;&#x4E0E;&#x5143;&#x6570;&#x636E;&#xFF08;metadata&#xFF09;&#x6293;&#x53D6;&#x4F5C;&#x7528;&#xFF0C;&#x5229;&#x7528;&#x5143;&#x6570;&#x636E;&#x4FE1;&#x606F;&#x6765;&#x5206;&#x7C7B;&#xFF0C;&#x4F9B;&#x672C;&#x5730;&#x5F71;&#x7247;&#x5206;&#x7C7B;&#x6574;&#x7406;&#x4F7F;&#x7528;&#x3002;</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/heimdall-icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1585729829</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>&#x65E5;&#x672C;&#x7535;&#x5F71;&#x5143;&#x6570;&#x636E; &#x6293;&#x53D6;&#x5DE5;&#x5177; | &#x522E;&#x524A;&#x5668;&#xFF0C;&#x914D;&#x5408;&#x672C;&#x5730;&#x5F71;&#x7247;&#x7BA1;&#x7406;&#x8F6F;&#x4EF6; Emby, Jellyfin, Kodi &#x7B49;&#x7BA1;&#x7406;&#x672C;&#x5730;&#x5F71;&#x7247;&#xFF0C;&#x8BE5;&#x8F6F;&#x4EF6;&#x8D77;&#x5230;&#x5206;&#x7C7B;&#x4E0E;&#x5143;&#x6570;&#x636E;&#xFF08;metadata&#xFF09;&#x6293;&#x53D6;&#x4F5C;&#x7528;&#xFF0C;&#x5229;&#x7528;&#x5143;&#x6570;&#x636E;&#x4FE1;&#x606F;&#x6765;&#x5206;&#x7C7B;&#xFF0C;&#x4F9B;&#x672C;&#x5730;&#x5F71;&#x7247;&#x5206;&#x7C7B;&#x6574;&#x7406;&#x4F7F;&#x7528;&#x3002;</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/</HostDir>
+      <ContainerDir>/xxx</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="media and the config dir" Target="/xxx" Default="" Mode="rw" Description="&#x5C0F;&#x59D0;&#x59D0;&#x7684;&#x5BB6;&#xFF0C;&#x4F1A;&#x5728;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x751F;&#x6210;&#x914D;&#x7F6E;&#x6587;&#x4EF6;(config.ini)" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/</Config>
+</Container>

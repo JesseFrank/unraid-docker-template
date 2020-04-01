@@ -17,9 +17,9 @@
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/J3n5en/unraid-docker-template/master/J3n5en/images/TinyMediaManager.png</Icon>
   <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
-  <PostArgs>echo 13.224.161.90 api.themoviedb.org >> /etc/hosts</PostArgs>
+  <PostArgs></PostArgs>
   <CPUset/>
-  <DateInstalled>1585461587</DateInstalled>
+  <DateInstalled>1585729829</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>&#x5E26;&#x4E2D;&#x6587;&#x5B57;&#x4F53;&#x7684;TinyMediaManager</Description>
