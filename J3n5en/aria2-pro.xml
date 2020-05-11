@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>aria2-pro</Name>
+  <Repository>p3terx/aria2-pro</Repository>
+  <Registry>https://hub.docker.com/r/p3terx/aria2-pro</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/P3TERX/docker-aria2-pro</Support>
+  <Project/>
+  <Overview/>
+  <Category>Downloaders:</Category>
+  <WebUI>http://[IP]:[PORT:6080]</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset>0</CPUset>
+  <DateInstalled>1589169628</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>6888</HostPort>
+        <ContainerPort>6888</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>6888</HostPort>
+        <ContainerPort>6888</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/Downloads/</HostDir>
+      <ContainerDir>/downloads</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>RPC_SECRET</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="BT listen" Target="6888" Default="6888" Mode="tcp" Description="Container Port: 6888" Type="Port" Display="always" Required="true" Mask="false">6888</Config>
+  <Config Name="DHT Listen" Target="6888" Default="6888" Mode="udp" Description="Container Port: 6888" Type="Port" Display="always" Required="true" Mask="false">6888</Config>
+  <Config Name="Downloads" Target="/downloads" Default="/mnt/user" Mode="rw" Description="Container Path: /downloads" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Downloads/</Config>
+  <Config Name="RPC_SECRET" Target="RPC_SECRET" Default="password" Mode="" Description="Container Variable: RPC_SECRET" Type="Variable" Display="always" Required="false" Mask="false"/>
