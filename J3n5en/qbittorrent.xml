@@ -66,3 +66,4 @@
   <Config Name="Downloads" Target="/downloads" Default="/mnt/user/" Mode="rw" Description="qBittorrent default download location" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/</Config>
   <Config Name="BT_PORT" Target="8999" Default="8999" Mode="tcp" Description="BT_PORT TCP" Type="Port" Display="advanced-hide" Required="true" Mask="false">8999</Config>
   <Config Name="BT_PORT" Target="8999" Default="8999" Mode="udp" Description="BT_PORT UDP" Type="Port" Display="advanced" Required="true" Mask="false">8999</Config>
+</Container>
