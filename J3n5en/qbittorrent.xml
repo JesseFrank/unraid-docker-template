@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>QBittorrent</Name>
-  <Repository>80x86/qbittorrent:4.2.5-alpine-3.11-arm64</Repository>
+  <Repository>80x86/qbittorrent:4.2.5-alpine-3.11-amd64</Repository>
   <Registry>https://hub.docker.com/r/80x86/qbittorrent</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://hub.docker.com/r/80x86/qbittorrent</Support>
   <Project>https://hub.docker.com/r/80x86/qbittorrent</Project>
-  <Overview>80x86/qbittorrent:4.2.5-alpine-3.11-arm64</Overview>
+  <Overview>80x86/qbittorrent:4.2.5-alpine-3.11-amd64</Overview>
   <Category>Downloaders:</Category>
   <WebUI>http://[IP]:[PORT:8082]/</WebUI>
   <TemplateURL/>
@@ -17,10 +17,10 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1593326916</DateInstalled>
+  <DateInstalled>1593327411</DateInstalled>
   <DonateText>https://hub.docker.com/r/80x86/qbittorrent</DonateText>
   <DonateLink>https://hub.docker.com/r/80x86/qbittorrent</DonateLink>
-  <Description>80x86/qbittorrent:4.2.5-alpine-3.11-arm64</Description>
+  <Description>80x86/qbittorrent:4.2.5-alpine-3.11-amd64</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
